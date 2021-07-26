@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="icon/logo-title.png" type="image/icon type">
+    <title>Authentication | CASA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+    <style>
+        #container{
+            border:2px solid black;
+            width:72%;
+            height:90%;
+            left:50%;
+            top:50%;
+            box-shadow:2px 2px 20px;
+            border-radius:20px;
+            align-items: center;
+            background-color:#ffffff;
+            transform:translate(-50%,-50%);
+            position:absolute;
+        }
+        #first{
+            margin-top:120px;
+            margin-bottom:0px;
+            text-align:center;
+            font-size:22px;
+
+        }
+        #authe {
+            margin-left:140px;
+            height:50px;
+            width: 300px;
+            border-radius:13px;
+            border:0.5px solid black;
+            outline: none;
+            font-size: 15px;
+            box-shadow: 2px 6px 10px rgba(66,57,238,0.3);
+            border-radius:30px;
+        }
+        #second{
+            margin-right:350px;
+            text-align:center;  
+            font-family:"Poppins",sans-serif;         
+        }
+
+        #third{
+           float:right;
+           clear:right;
+           margin-right:388px;
+        
+            
+        }
+        #box{
+            float:right;
+            background: linear-gradient(-30deg,blue,purple);
+            box-shadow:2px 6px 16px rgba(66,57,238,0.3);
+            color:antiquewhite;
+            clear: right;
+            margin-right:150px;
+            width:160px;
+            height:40px;
+            font-size:15px;
+            letter-spacing:2px;
+            text-shadow:2px 2px 1px black;
+            outline:none;            
+            border-radius:20px;
+            border: none;
+            }
+        .back{
+            font-weight:bolder;
+            font-size:xx-large;
+            outline: none;
+            background-color:white;
+            border: none;
+            text-decoration: none;
+        }
+        #box a{
+            text-decoration: none;
+            color: white;
+        }
+        .back a{
+            text-decoration: none;
+            color: black
+            ;
+        }
+        .head{
+            margin-left: 10px;
+            text-shadow:1px 1px 1px black;
+        }   
+        .code{
+            font-family:"Poppins", sans-serif;
+            font-size:24px;
+        }
+    </style>
+ 
+</head>
+<body style="background-color:#eef1f8;">
+    <div id="container">
+    
+     <h1 class="head"><button class="back"><a href="#" ><</a></button>&nbsp;&nbsp;&nbsp;User Authentication</h1>
+     
+     <div id ="first"> 
+       <form>      
+           <label class="code" for="authentication"><strong>Enter  User  Authentication  Code</strong></label>
+           <input id ="authe" type="alpha" id="authentication"pattern="[A-Za-z0-9]" title="Authentication code" >
+        </form>
+        <br><br>
+    </div>
+
+     <div id="second">
+       <p>(Enter the first two letters of your name
+       andyour father's nam</p>at last your user
+       id in lowercase.For example: name is</p>
+       <strong>Arun,</strong> father name is <strong>Ramachandran</strong>
+       and your user Id is <strong>17</strong>,then<p>your authentification  code is  <strong>arramachandran17</strong>)</p>
+       <p></p>
+     </div>
+      <div>
+        <a href="#"><button id ="box">Submit</a></button>
+
+      </div>
+
+    
+    </div>
+</body>
+</html>

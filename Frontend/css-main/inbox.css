@@ -1,0 +1,129 @@
+.container{
+  content:"Mail CASA";
+  width:85%;
+  height:90%;
+  background-color:#ffffff;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  box-shadow:2px 2px 20px;
+  border-radius:20px;
+  display:flex;
+  background-image: url(bg.gif);
+  background-repeat: no-repeat;
+  background-size:cover; 
+}
+
+#sideleft{
+  clear:left;
+  margin-left: 25px;
+
+}
+#sideleft ul{
+  text-align:center;
+  border-radius:10px;
+  padding:0px;
+  margin-top:0px;
+  margin-right:0px;
+
+  margin-left:0px;
+  }
+#sideleft ul li{
+  display:inline;
+   margin-top:0px;
+   margin-right:0px;
+   margin-left:0px;
+   font-size:23px;
+  }
+#sideleft ul li a{
+      
+  font-family:verdana;
+  margin-right:40px;
+  margin-bottom:0px;
+  background-color:white;
+  font-size:23px;
+  color:black;
+  }
+#term1{
+  float:left;
+  clear:left;
+  margin-left:0px;
+  font-size:17px;
+  margin-bottom:30px;
+  margin-top:10px;
+  text-decoration:none;
+}
+
+#term2{
+    float:left;
+    clear:left;
+    margin-left:0px;
+    font-size:px;
+    margin-bottom:30px;
+    margin-top:0px;
+  }
+#term3{
+  float:left;
+  clear:left;
+  margin-left:0px;
+  font-size:17px;
+  margin-bottom:0px;
+  margin-top:0px;
+}
+#header{
+  margin-top:20px;
+}
+.logo{
+  margin-top:px;
+  margin-left:6px;
+  display: flex;
+  position:static;
+}
+.heading{
+  font-size: 23px;
+  display:flex;
+  position:relative;
+  margin-bottom: px;
+}
+.text-heading{
+  font-size:23px;
+  color: rgb(0, 93, 151);
+  margin-top: 0px;
+  font-family:sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px ;
+  display: flex;
+}
+#main {
+  background-color:none;
+  margin-top:30px;
+  margin-right:0px;
+  margin-bottom:15px;
+  margin-left:0px;
+  border-radius:10px;
+  font-size:120%; 
+}
+
+table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width:850px;
+      }
+td{
+  
+  padding:12px;
+  border:1px solid #dddddd;
+}
+
+tr:nth-child(even) {
+        background-color: #dddddd;
+      }    
+
+#edit{
+  margin-top:160px;
+  margin-left:30px;
+  text-decoration:none;
+  float:left;
+}
+

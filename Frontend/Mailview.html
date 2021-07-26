@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>YourMail | CASA</title>
+        <link rel="icon" href="icon/logo-title.png" type="image/icon type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap" rel="stylesheet">
+        <style>
+            .container{
+                content:"Mail CASA";
+                width:65%;
+                height:87%;
+                background-color:#ffffff;
+                position:absolute;
+                left:50%;
+                top:50%;
+                transform:translate(-50%,-50%);
+                box-shadow:2px 2px 20px;
+                border-radius:20px;
+                display:flex;
+                background-image: url(bg.gif);
+                background-repeat: no-repeat;
+                background-size:cover; 
+            
+            }
+            .head{
+            margin-left:5px;
+            text-shadow:1px 1px 1px black;
+            }   
+            .back a{
+                text-decoration: none;
+                color: black;
+            }
+            .back{
+                font-weight:bolder;
+                font-size:xx-large;
+                outline: none;
+                background-color:white;
+                border: none;
+                text-decoration: none;
+            }
+            .mail-body{
+                margin-top:50px;
+            }
+            #name{
+                font-size:20px;
+                font-family:"Poppins",sans-serif;
+                font-weight: bold;
+            }
+            #name-field{
+                height:28px;
+                border-radius:13px;
+                width:240px;
+                margin-left: 135px;
+                border-radius:13px;
+                border:none;
+                outline: none;
+                font-size: 15px;
+                box-shadow: 2px 6px 10px rgba(66,57,238,0.3);
+                border-radius:30px;
+                text-align: center;
+                margin-bottom:7px;
+                font-weight:bolder;
+            }
+            #name-field A{
+                height:28px;
+                border-radius:13px;
+                width:240px;
+                margin-left: 135px;
+                border-radius:13px;
+                border:none;
+                outline: none;
+                font-size: 15px;
+                box-shadow: 2px 6px 10px rgba(66,57,238,0.3);
+                border-radius:30px;
+                text-align: center;
+                margin-bottom:7px;
+                font-weight:bolder;
+            }
+
+            #sub-field{
+                height:32px;
+                border-radius:13px;
+                width:240px;
+                margin-left: 115px;
+                border-radius:13px;
+                border:none;
+                outline: none;
+                font-size: 15px;
+                box-shadow: 2px 6px 10px rgba(66,57,238,0.3);
+                border-radius:30px;
+                text-align: center;
+                margin-bottom:5px;
+                font-weight:bolder;
+            }
+            #area{
+                 margin-top:6px;
+                 font-size: 17px;
+                 font-family:sans-serif;
+                 text-align: justify;
+                 border: none;
+                 outline: none;
+            }
+            #fourth{
+                margin-left:590px;
+                width:120px;
+                height:37px;
+                outline: none;
+                border: none;
+                border-radius: 13px;
+                background: linear-gradient(-30deg,blue,purple);
+                box-shadow:10px 10px 10px rgba(66,57,238,0.3); 
+                cursor: pointer; 
+                color: white;
+                font-size:17px;
+                margin-bottom: 10px;                
+            }
+        </style>
+    </head>
+    <body style="background-color:#eef1f8;">
+        <div class="container">
+           <div>
+            <h1 class="head"><button class="back"><a href="inbox.html" ><</a></button>&nbsp;&nbsp;&nbsp&nbsp</h1>
+           </div>
+            <div class="mail-body">
+                <div class="name">
+                    <label id="name" for="email">From</label>
+                    <input id="name-field" placeholder="chandra0212@gmail.casa" class="input-box" type="text" id="email" name="emailid" required><br><br><br>
+                    <label id="name" for="email">To&nbsp;&nbsp;&nbsp;&nbsp</label>
+                    <input id="name-field" placeholder="arunagiri0512@gmail.casa" class="input-box" type="text" id="email" name="emailid" required><br><br><br>
+                    <label id="name" for="email">Subject</label>
+                    <input id="sub-field" placeholder="Sample Subject" class="input-box" type="text" id="email" name="emailid" required><br><br><br>
+                
+                </div>
+                <div class="text-area">
+                    <textarea id="area" rows="10" cols="80" name="description" >
+                        ake the concept of loyalty programs and punch cards and turn it into an SMS campaign! For example, have customers send texts with a photo of their receipt and after 10 submissions they receive a gift or reward.
+Why it works: Again, the added value here is the reward you’re offering in exchange for customer loyalty. With a traditional punch card, all you’re doing is getting customers to return to your business, which is great. But by text enabling the process, your customers are consenting to receiving promotional texts from your brand, which gives you added ROI on top of the return business. Plus, it’s fun and simple!
+                    </textarea><br><br><br>
+                </div>
+                <div class="reply">
+                    <a href="compose.html">
+                        <button id="fourth">Reply</button>
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+    </body>
+</html>

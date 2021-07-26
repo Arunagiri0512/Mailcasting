@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="icon" href="icon/logo-title.png" type="image/icon type">
+        <title>Compose | CASA</title>
+        <style>
+            #container{
+                content:"Mail CASA";
+                width:72%;
+                height:90%;
+                background-color:#ffffff;
+                position:absolute;
+                left:50%;
+                top:50%;
+                transform:translate(-50%,-50%);
+                box-shadow:2px 2px 20px;
+                border-radius:20px;
+                display:flex;
+            }
+
+            #second{
+                margin-top:120px;
+            }
+            
+            #one{
+                font-size:20px;
+                margin-right:80px;
+            }
+            #two{
+                font-size:20px;
+                margin-right:40px;
+            }
+            #three{
+                width:220px;
+                background-color:white;
+                border-radius:12px;
+                height:30px;
+                box-shadow: 2px 6px 10px rgba(66,57,238,0.3);
+                border-radius:30px;
+                align-items:center;
+                border:none;
+                outline:none;
+                text-align: center;
+            }
+            #area{
+                 margin-top:10px;
+                 font-size: 17px;
+                 font-family:sans-serif;
+            }
+           
+            #fourth{
+                margin-left:140px;
+                width:120px;
+                height:37px;
+                outline: none;
+                border: none;
+                border-radius: 13px;
+                background: linear-gradient(-30deg,blue,purple);
+                box-shadow:10px 10px 10px rgba(66,57,238,0.3); 
+                cursor: pointer; 
+                color: white;
+                font-size:17px;
+                margin-bottom: 10px;                
+            }
+            .head{
+            margin-left: 10px;
+            text-shadow:1px 1px 1px black;
+        }   
+        .back a{
+            text-decoration: none;
+            color: black
+            ;
+        }
+        .back{
+            font-weight:bolder;
+            font-size:xx-large;
+            outline: none;
+            background-color:white;
+            border: none;
+            text-decoration: none;
+        }
+        .file{
+            margin-bottom: 100px;
+            width:120px;
+            height:37px;
+            outline: none;
+            border: none;
+            border-radius: 13px;
+            background: linear-gradient(-30deg,blue,purple);
+            box-shadow:10px 10px 10px rgba(66,57,238,0.3); 
+            cursor: pointer;   
+            color: white;
+            font-size:17px;
+            margin-bottom: 10px;
+        }
+        .input-file{
+            margin-top:10px;
+        }
+        </style>
+
+    </head>
+    <body style="background-color:#eef1f8;">
+        <div id="container">
+            <h1 class="head"><button class="back"><a href="inbox.html" ><</a></button>&nbsp;&nbsp;&nbsp;Compose Mail</h1>
+               
+           <div id="second">
+               <form>
+                  <label for="to" id="one">To</label>
+                  <input  id="three" type="email"  name="mail" required><br><br><br>
+                  <label for="subject"  id="two">Subject</label>
+                  <input  id="three" type="text"  name="subject" required><br><br>
+                  <textarea id="area" rows="12" cols="55" name="description" >
+                  </textarea><br><br><br>
+                  <div class="file-submit">
+                        <input type="file" class="input-file" id="real-file" hidden="hidden" />
+                        <button  class ="file" type="button" id="custom-button">Attach File</button>
+                        <span id="custom-text">No file chosen, yet.</span>
+                        <a href="">
+                            <button id="fourth">Send  </button>
+                        </a>
+                  </div>
+               </form>
+           </div>
+        </div>
+    </body>
+    <script>
+        const realFileBtn = document.getElementById("real-file");
+        const customBtn = document.getElementById("custom-button");
+        const customTxt = document.getElementById("custom-text");
+        customBtn.addEventListener("click", function() {
+        realFileBtn.click();
+        });
+        realFileBtn.addEventListener("change", function() {
+        if (realFileBtn.value) {
+            customTxt.innerHTML = realFileBtn.value.match(
+            /[\/\\]([\w\d\s\.\-\(\)]+)$/
+            )[1];
+        } else {
+            customTxt.innerHTML = "No file chosen, yet.";
+        }
+        });
+    </script>
+</html>
